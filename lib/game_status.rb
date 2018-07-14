@@ -51,55 +51,29 @@ def won(board)
     if board != !top_row_win || board != !middle_row_win || board != !bottom_row_win || board != !first_column_win || board != !second_column_win || board != !third_column_win || board != !first_diagonal_win || board != !second_diagonal_win
           return top_row_win.find_index
       end
-
-    if WIN_COMBINATIONS[0][0] == "X" &&   WIN_COMBINATIONS[0][1] == "X" &&   WIN_COMBINATIONS[0][2] == "X"
-  return "X won in the mTOP"
-    elsif board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
+#print winning indexes
+    if WIN_COMBINATIONS[0][0] == "X" &&   WIN_COMBINATIONS[0][1] == "X" && WIN_COMBINATIONS[0][2] == "X"
+          return "X won in the top row"
+    elsif WIN_COMBINATIONS[1][0] == "X" && WIN_COMBINATIONS[1][1] == "X" && WIN_COMBINATIONS[1][2] == "X"
           return "X won in the middle row - #{"middle_row_win"}"
-          puts middle_row_win
-    elsif board[bottom_row_win[6]] == "X" && board[bottom_row_win[7]] == "X" && board[bottom_row_win[8]] == "X"
+    elsif WIN_COMBINATIONS[2][0] == "X" && WIN_COMBINATIONS[2][1] == "X" && WIN_COMBINATIONS[2][2] == "X"
           return "X won in the bottom row - #{"bottom_row_win"}"
-          puts bottom_row_win
-    elsif board[first_column_win[0]] == "X" && board[first_column_win[1]] == "X" && board[first_column_win[2]] == "X"
+    elsif WIN_COMBINATIONS[3][0] == "X" && WIN_COMBINATIONS[3][1] == "X" && WIN_COMBINATIONS[3][2] == "X"
           return "X won in the first_column - #{"first_column_win"}"
-          puts first_column_win
-    elsif board[second_column_win[0]] == "X" && board[second_column_win[3]] == "X" && board[second_column_win[6]] == "X"
+    elsif WIN_COMBINATIONS[4][0] == "X" && WIN_COMBINATIONS[4][1] == "X" && WIN_COMBINATIONS[4][2] == "X"
           return "X won in the second - #{"second_column_win"}"
-          puts second_column_win
-    elsif board[third_column_win[2]] == "X" && board[third_column_win[5]] == "X" && board[third_column_win[8]] == "X"
+    elsif WIN_COMBINATIONS[5][0]== "X" && WIN_COMBINATIONS[5][1] == "X" && WIN_COMBINATIONS[5][2] == "X"
           return "X won in the third column - #{"third_column_win"}"
           puts third_column_win
-    elsif board[first_diagonal_win[0]] == "X" && board[first_diagonal_win[4]] == "X" && board[first_diagonal_win[8]] == "X"
+    elsif WIN_COMBINATIONS[6][0] == "X" && WIN_COMBINATIONS[6][1] == "X" && WIN_COMBINATIONS[6][2] == "X"
+              return "X won in the first diagonal - #{"first_diagonal_win"}"  
+    elsif WIN_COMBINATIONS[7][0] == "X" && WIN_COMBINATIONS[7][1] == "X" && WIN_COMBINATIONS[7][2] == "X"
           return "X won in the first diagonal - #{"first_diagonal_win"}"
           puts first_diagonal_win
-    elsif board[second_diagonal_win[2]] == "X" && board[second_diagonal_win[4]] == "X" && board[second_diagonal_win[6]] == "X"
+    elsif WIN_COMBINATIONS[8][0] == "X" && WIN_COMBINATIONS[8][1] == "X" && WIN_COMBINATIONS[8][2] == "X"
           return "X won in the second diagonal - #{"second_diagonal_win"}"
-          puts second_diagonal_win
-    elsif board[top_row_win[0]] == "O" && board[top_row_win[1]] == "O" && board[top_row_win[2]] == "O"
-          return "O won in the top row - #{"middle_row_win"}"
-          puts top_row_win
-    elsif board[middle_row_win[3]] == "O" && board[middle_row_win[4]] == "O" && board[middle_row_win[5]] == "O"
-          return "O won in the middle row - #{"middle_row_win"}"
-          puts middle_row_win
-    elsif board[bottom_row_win[6]] == "O" && board[bottom_row_win[7]] == "O" && board[bottom_row_win[8]] == "O"
-          return "O won in the bottom row - #{"middle_row_win"}"
-          puts bottom_row_win
-    elsif board[first_column_win[0]] == "O" && board[first_column_win[1]] == "O" && board[first_column_win[2]] == "O"
-          return "O won in the first_column - #{"middle_row_win"}"
-          puts middle_row_win
-    elsif board[second_column_win[0]] == "O" && board[second_column_win[3]] == "O" && board[second_column_win[6]] == "O"
-          return "O won in the second column - #{"middle_row_win"}"
-          puts middle_row_win
-    elsif board[third_column_win[2]] == "O" && board[third_column_win[5]] == "O" && board[third_column_win[8]] == "O"
-          return "O won in the third column - #{"middle_row_win"}"
-          puts middle_row_win
-    elsif board[first_diagonal_win[0]] == "O" && board[first_diagonal_win[4]] == "O" && board[third_column_win[8]] == "O"
-          return "O won in the first diagonal - #{"middle_row_win"}"
-          puts first_diagonal_win
-    else board[second_diagonal_win[2]] == "O" && board[second_diagonal_win[4]] == "O" && board[second_diagonal_win[6]] == "O"
-          return "O won in the second diagonal - #{"second_diagonal_win"}"
-          puts second_diagonal_win
 
+          
           end
 
           if board[index].nil?
