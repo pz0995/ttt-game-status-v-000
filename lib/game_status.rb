@@ -32,7 +32,7 @@ def full?(board)
 end
 
 def draw?(board)
-  !board.won? && board.over?
+  !board.won? && board.all?
   return true
 end
 
