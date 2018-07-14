@@ -58,8 +58,6 @@ def won(board)
           return WIN_COMBINATIONS[7]
     else WIN_COMBINATIONS[8][0] == "X" && WIN_COMBINATIONS[8][1] == "X" && WIN_COMBINATIONS[8][2] == "X"
           return WIN_COMBINATIONS[8]
-
-
           end
 
   board.full?
@@ -78,7 +76,6 @@ end
 
 def draw?(board)
   !(won?) && (full?)
-
 end
 
 def over(board) #need draw
