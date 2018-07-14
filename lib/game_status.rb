@@ -27,14 +27,6 @@ def won(board)
 WIN_COMBINATIONS.map {|row| row[2]}
 
 
-  WIN_COMBINATIONS = win_combination[1]
-  WIN_COMBINATIONS= win_combination[2]
-  WIN_COMBINATIONS = win_combination[3]
-  WIN_COMBINATIONS= win_combination[4]
-  WIN_COMBINATIONS = win_combination[5]
-  WIN_COMBINATIONS = win_combination[6]
-  WIN_COMBINATIONS = win_combination[7]
-  WIN_COMBINATIONS= win_combination[8]
 end
   position_0 = board[win_index_0]
   position_1 = board[win_index_1]
