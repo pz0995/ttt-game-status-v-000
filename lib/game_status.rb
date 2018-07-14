@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 
-def won(board)
+def won?(board)
   WIN_COMBINATIONS.each_with_index do |combination, index|
     return index
     position_0 = WIN_COMBINATIONS[0]
