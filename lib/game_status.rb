@@ -53,8 +53,7 @@ def won(board)
       end
 
     if WIN_COMBINATIONS[0][0] == "X" && WIN_COMBINATIONS[0][1] == "X" && WIN_COMBINATIONS[0][2] == "X"
-          return ["X won in the top row - #{top_row_win [0]}"
-puts "XXX"
+  puts  top_row_win
     elsif board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
           return "X won in the middle row - #{"middle_row_win"}"
           puts middle_row_win
