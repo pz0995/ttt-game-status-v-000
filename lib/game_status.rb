@@ -26,7 +26,7 @@ end
 def full?(board)
   if board.all?
     return true
-  else !board.sll?
+  else !board.all?
     return false
   end
 end
