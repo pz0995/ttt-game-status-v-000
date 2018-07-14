@@ -6,10 +6,11 @@ def position_taken?(board, index)
 end
 
 WIN_COMBINATIONS = [
-  
+
   WIN_COMBINATIONS.each do |combination|
     puts combination
 
+]
 
 def won(board)
 
