@@ -24,8 +24,9 @@ def won(board)
   WIN_COMBINATIONS.each_with_index do |combination, index|
     puts "#{index}"
 
+WIN_COMBINATIONS.map {|row| row[2]}
 
-  WIN_COMBINATIONS = win_combination[0]
+
   WIN_COMBINATIONS = win_combination[1]
   WIN_COMBINATIONS= win_combination[2]
   WIN_COMBINATIONS = win_combination[3]
