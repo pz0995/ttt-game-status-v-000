@@ -23,7 +23,7 @@ WIN_COMBINATIONS = [
 def won(board)
   WIN_COMBINATIONS.each_with_index do |combination, index|
     puts "#{index}"
-  
+
 
   WIN_COMBINATIONS = win_combination[0]
   WIN_COMBINATIONS = win_combination[1]
@@ -34,7 +34,7 @@ def won(board)
   WIN_COMBINATIONS = win_combination[6]
   WIN_COMBINATIONS = win_combination[7]
   WIN_COMBINATIONS= win_combination[8]
-end 
+end
   position_0 = board[win_index_0]
   position_1 = board[win_index_1]
   position_2 = board[win_index_2]
