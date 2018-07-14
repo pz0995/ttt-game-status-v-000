@@ -53,25 +53,23 @@ def won(board)
       end
 #print winning indexes
     if WIN_COMBINATIONS[0][0] == "X" &&   WIN_COMBINATIONS[0][1] == "X" && WIN_COMBINATIONS[0][2] == "X"
-          return "X won in the top row"
+          return WIN_COMBINATIONS[0]
     elsif WIN_COMBINATIONS[1][0] == "X" && WIN_COMBINATIONS[1][1] == "X" && WIN_COMBINATIONS[1][2] == "X"
-          return "X won in the middle row - #{"middle_row_win"}"
+          return WIN_COMBINATIONS[1]
     elsif WIN_COMBINATIONS[2][0] == "X" && WIN_COMBINATIONS[2][1] == "X" && WIN_COMBINATIONS[2][2] == "X"
-          return "X won in the bottom row - #{"bottom_row_win"}"
+          return WIN_COMBINATIONS[2]
     elsif WIN_COMBINATIONS[3][0] == "X" && WIN_COMBINATIONS[3][1] == "X" && WIN_COMBINATIONS[3][2] == "X"
-          return "X won in the first_column - #{"first_column_win"}"
+          return WIN_COMBINATIONS[3]
     elsif WIN_COMBINATIONS[4][0] == "X" && WIN_COMBINATIONS[4][1] == "X" && WIN_COMBINATIONS[4][2] == "X"
-          return "X won in the second - #{"second_column_win"}"
+          return WIN_COMBINATIONS[4]
     elsif WIN_COMBINATIONS[5][0]== "X" && WIN_COMBINATIONS[5][1] == "X" && WIN_COMBINATIONS[5][2] == "X"
-          return "X won in the third column - #{"third_column_win"}"
-          puts third_column_win
+          return WIN_COMBINATIONS[5]
     elsif WIN_COMBINATIONS[6][0] == "X" && WIN_COMBINATIONS[6][1] == "X" && WIN_COMBINATIONS[6][2] == "X"
-              return "X won in the first diagonal - #{"first_diagonal_win"}"
+          return WIN_COMBINATIONS[6]
     elsif WIN_COMBINATIONS[7][0] == "X" && WIN_COMBINATIONS[7][1] == "X" && WIN_COMBINATIONS[7][2] == "X"
-          return "X won in the first diagonal - #{"first_diagonal_win"}"
-          puts first_diagonal_win
-    elsif WIN_COMBINATIONS[8][0] == "X" && WIN_COMBINATIONS[8][1] == "X" && WIN_COMBINATIONS[8][2] == "X"
-          return "X won in the second diagonal - #{"second_diagonal_win"}"
+          return WIN_COMBINATIONS[7]
+    else WIN_COMBINATIONS[8][0] == "X" && WIN_COMBINATIONS[8][1] == "X" && WIN_COMBINATIONS[8][2] == "X"
+          return WIN_COMBINATIONS[8]
 
 
           end
