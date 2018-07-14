@@ -33,10 +33,12 @@ end
 
 def draw?(board)
   !board.won? && board.all?
+  return true
 end
 
 def over?(board) #need draw
 if board.draw? || board.won?
+  return true
 end
 
 def winner?(board)
