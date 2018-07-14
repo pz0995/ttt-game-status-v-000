@@ -5,7 +5,7 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-WIN_COMBINATIONS = [
+WIN_COMBINATIONS = []
 
   WIN_COMBINATIONS.each do |combination|
     puts combination
