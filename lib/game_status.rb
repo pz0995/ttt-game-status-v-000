@@ -59,7 +59,8 @@ def won(board)
           return WIN_COMBINATIONS[8]
           end
 
-  board.full?
+if  board.empty?
+  return false
             end
     end
 def full?(board)
