@@ -78,7 +78,7 @@ def won(board)
 
 
 end
-def full(board)
+def full?(board)
   if board.full.all
     return true
   else !board.full?
@@ -86,7 +86,7 @@ def full(board)
   end
 end
 
-def draw(board)
+def draw?(board)
   !(won?) && (full?)
 
 end
