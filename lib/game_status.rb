@@ -26,13 +26,13 @@ end
 def full?(board)
   if board.all?
     return true
-  else !board.won? && board.full?
+  else !board.won? && !board.full?
     return false
   end
 end
 
 def draw?(board)
-  !board.won? && board.full?
+  !board.won? && board.all?
 end
 
 def over?(board) #need draw
