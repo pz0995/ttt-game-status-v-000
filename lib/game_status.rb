@@ -62,14 +62,11 @@ def won(board)
 if  board.empty?
   return false
     end
-
     if board == !(won?) && board == (full?)
 
 def full?(board)
-  if board.full.all
+  if !board.empty
     return true
-  else !board.full?
-    return false
   end
 end
 
@@ -77,12 +74,11 @@ def draw?(board)
   !(won?) && (full?)
 end
 
-def over(board) #need draw
-if board.full? || board == top_row_win || board == middle_row_win || board == bottom_row_win || board == first_column_win || board == second_column_win || board == third_column_win || board == first_diagonal_win || board ==  second_diagonal_win
-  return true
+def over?(board) #need draw
+if board.full? || board.draw? || board.won?
 end
 
-def winner(board)
+def winner?(board)
 #should accept a board and return the token, "X" or "O" that has won the game given a winning board.
   if "X" == board[top_row_win] || "X" == board[middle_row_win] || "X" == board[bottom_row_win] || "X" == board[first_column_win] || "X" == board[second_column_win] || "X" == board[third_column_win] || "X" == board[first_diagonal_win] || "X" == board[second_diagonal_win]
     return puts "X"
