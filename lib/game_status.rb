@@ -90,4 +90,3 @@ def winner(board)
     return false
   end
 end
-end
