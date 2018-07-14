@@ -26,10 +26,10 @@ def won(board)
     position_0 = WIN_COMBINATIONS[0]
     position_1 = WIN_COMBINATIONS[1]
     position_2 = WIN_COMBINATIONS[2]
-      position_3 = WIN_COMBINATIONS[3]
+    position_3 = WIN_COMBINATIONS[3]
     position_4 = WIN_COMBINATIONS[4]
     position_5 = WIN_COMBINATIONS[5]
-      position_6 = WIN_COMBINATIONS[6]
+    position_6 = WIN_COMBINATIONS[6]
     position_7 = WIN_COMBINATIONS[7]
     position_8 = WIN_COMBINATIONS[8]
 
@@ -43,9 +43,6 @@ def won(board)
   third_column_win = [2, 5, 8]
   first_diagonal_win = [0, 4, 8]
   second_diagonal_win = [2, 4, 6]
-
-
-
 
 
     if board != !top_row_win || board != !middle_row_win || board != !bottom_row_win || board != !first_column_win || board != !second_column_win || board != !third_column_win || board != !first_diagonal_win || board != !second_diagonal_win
