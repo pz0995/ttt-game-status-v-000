@@ -16,13 +16,14 @@ WIN_COMBINATIONS = [
   [2, 5, 8]
 ]
 
-  WIN_COMBINATIONS.each do |combination|
-    puts combination
+
 
 
 
 def won(board)
-
+  WIN_COMBINATIONS.each_with_index do |combination, index| 
+    puts "#{combination}"
+  end
 
   win_index_0 = win_combination[0]
   win_index_1 = win_combination[1]
