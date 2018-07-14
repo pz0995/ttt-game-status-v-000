@@ -17,9 +17,6 @@ WIN_COMBINATIONS = [
 ]
 
 
-
-
-
 def won(board)
   WIN_COMBINATIONS.each_with_index do |combination, index|
     return index
@@ -33,8 +30,6 @@ def won(board)
     position_7 = WIN_COMBINATIONS[7]
     position_8 = WIN_COMBINATIONS[8]
 
-
-
   top_row_win = [0, 1, 2]
   middle_row_win = [3, 4, 5]
   bottom_row_win = [6, 7, 8]
@@ -45,10 +40,6 @@ def won(board)
   second_diagonal_win = [2, 4, 6]
 
 
-    if board != !top_row_win || board != !middle_row_win || board != !bottom_row_win || board != !first_column_win || board != !second_column_win || board != !third_column_win || board != !first_diagonal_win || board != !second_diagonal_win
-          return top_row_win.find_index
-      end
-#print winning indexes
     if WIN_COMBINATIONS[0][0] == "X" &&   WIN_COMBINATIONS[0][1] == "X" && WIN_COMBINATIONS[0][2] == "X"
           return WIN_COMBINATIONS[0]
     elsif WIN_COMBINATIONS[1][0] == "X" && WIN_COMBINATIONS[1][1] == "X" && WIN_COMBINATIONS[1][2] == "X"
@@ -71,8 +62,7 @@ def won(board)
 
           end
 
-          if board[index].nil?
-                return false
+  board.full?
             end
     end
 
