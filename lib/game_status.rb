@@ -53,7 +53,7 @@ def won(board)
   first_diagonal_win = [0, 4, 8]
   second_diagonal_win = [2, 4, 6]
 
-  
+
   WIN_COMBINATIONS.each do |row|
     row.each do |cell|
       puts cell
