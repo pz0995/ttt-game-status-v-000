@@ -18,54 +18,14 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  WIN_COMBINATIONS.each_with_index do |combination, index|
-    return index
-    position_0 = WIN_COMBINATIONS[0]
-    position_1 = WIN_COMBINATIONS[1]
-    position_2 = WIN_COMBINATIONS[2]
-    position_3 = WIN_COMBINATIONS[3]
-    position_4 = WIN_COMBINATIONS[4]
-    position_5 = WIN_COMBINATIONS[5]
-    position_6 = WIN_COMBINATIONS[6]
-    position_7 = WIN_COMBINATIONS[7]
-    position_8 = WIN_COMBINATIONS[8]
+  WIN_COMBINATIONS.detect do |combo|
 
-  top_row_win = [0, 1, 2]
-  middle_row_win = [3, 4, 5]
-  bottom_row_win = [6, 7, 8]
-  first_column_win = [0, 3, 6]
-  second_column_win = [1, 4, 7]
-  third_column_win = [2, 5, 8]
-  first_diagonal_win = [0, 4, 8]
-  second_diagonal_win = [2, 4, 6]
-
-    if WIN_COMBINATIONS[0][0] == "X" &&   WIN_COMBINATIONS[0][1] == "X" && WIN_COMBINATIONS[0][2] == "X"
-          return WIN_COMBINATIONS[0]
-    elsif WIN_COMBINATIONS[1][0] == "X" && WIN_COMBINATIONS[1][1] == "X" && WIN_COMBINATIONS[1][2] == "X"
-          return WIN_COMBINATIONS[1]
-    elsif WIN_COMBINATIONS[2][0] == "X" && WIN_COMBINATIONS[2][1] == "X" && WIN_COMBINATIONS[2][2] == "X"
-          return WIN_COMBINATIONS[2]
-    elsif WIN_COMBINATIONS[3][0] == "X" && WIN_COMBINATIONS[3][1] == "X" && WIN_COMBINATIONS[3][2] == "X"
-          return WIN_COMBINATIONS[3]
-    elsif WIN_COMBINATIONS[4][0] == "X" && WIN_COMBINATIONS[4][1] == "X" && WIN_COMBINATIONS[4][2] == "X"
-          return WIN_COMBINATIONS[4]
-    elsif WIN_COMBINATIONS[5][0]== "X" && WIN_COMBINATIONS[5][1] == "X" && WIN_COMBINATIONS[5][2] == "X"
-          return WIN_COMBINATIONS[5]
-    elsif WIN_COMBINATIONS[6][0] == "X" && WIN_COMBINATIONS[6][1] == "X" && WIN_COMBINATIONS[6][2] == "X"
-          return WIN_COMBINATIONS[6]
-    elsif WIN_COMBINATIONS[7][0] == "X" && WIN_COMBINATIONS[7][1] == "X" && WIN_COMBINATIONS[7][2] == "X"
-          return WIN_COMBINATIONS[7]
-    else WIN_COMBINATIONS[8][0] == "X" && WIN_COMBINATIONS[8][1] == "X" && WIN_COMBINATIONS[8][2] == "X"
-          return WIN_COMBINATIONS[8]
-          end
-
-if board.empty?
-  return false
-    end
-
-if board == !won? && board == full?
-    return false
+    board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && position_taken?(board, combo[0])
   end
+
+    
+
+
 end
 
 def full?(board)
