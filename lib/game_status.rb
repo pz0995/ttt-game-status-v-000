@@ -66,14 +66,14 @@ def won(board)
           return "X won in the third column - #{"third_column_win"}"
           puts third_column_win
     elsif WIN_COMBINATIONS[6][0] == "X" && WIN_COMBINATIONS[6][1] == "X" && WIN_COMBINATIONS[6][2] == "X"
-              return "X won in the first diagonal - #{"first_diagonal_win"}"  
+              return "X won in the first diagonal - #{"first_diagonal_win"}"
     elsif WIN_COMBINATIONS[7][0] == "X" && WIN_COMBINATIONS[7][1] == "X" && WIN_COMBINATIONS[7][2] == "X"
           return "X won in the first diagonal - #{"first_diagonal_win"}"
           puts first_diagonal_win
     elsif WIN_COMBINATIONS[8][0] == "X" && WIN_COMBINATIONS[8][1] == "X" && WIN_COMBINATIONS[8][2] == "X"
           return "X won in the second diagonal - #{"second_diagonal_win"}"
 
-          
+
           end
 
           if board[index].nil?
