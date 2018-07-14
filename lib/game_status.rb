@@ -52,8 +52,8 @@ def won(board)
           return top_row_win.find_index
       end
 
-    if board[WIN_COMBINATIONS[0][0]] == "X" && board[[WIN_COMBINATIONS[0][1]] == "X" && board[[WIN_COMBINATIONS[0][2]] == "X"
-          return "X won in the top row - #{WIN_COMBINATIONS[0]}"
+    if board[top_row_win [0] == "X" && board[top_row_win [1]] == "X" && board[top_row_win [2] == "X"
+          return "X won in the top row - #{top_row_win [0]}"
           top_row_win.each_index = list.index(match)
 
     elsif board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
