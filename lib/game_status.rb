@@ -87,10 +87,7 @@ def full(board)
 end
 
 def draw(board)
-  if board.full? && board == !top_row_win || board == !middle_row_win || board == !bottom_row_win || board == !first_column_win || board == !second_column_win || board == !third_column_win || board == !first_diagonal_win || board == !second_diagonal_win
-    return true
-  else !board.full? && board == !top_row_win || board == !middle_row_win || board == !bottom_row_win || board == !first_column_win || board == !second_column_win || board == !third_column_win || board == !first_diagonal_win || board == !second_diagonal_win
-    return false
+  !(won?) && (full?)
   end
 end
 
