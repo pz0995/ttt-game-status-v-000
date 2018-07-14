@@ -39,7 +39,6 @@ def won(board)
   first_diagonal_win = [0, 4, 8]
   second_diagonal_win = [2, 4, 6]
 
-
     if WIN_COMBINATIONS[0][0] == "X" &&   WIN_COMBINATIONS[0][1] == "X" && WIN_COMBINATIONS[0][2] == "X"
           return WIN_COMBINATIONS[0]
     elsif WIN_COMBINATIONS[1][0] == "X" && WIN_COMBINATIONS[1][1] == "X" && WIN_COMBINATIONS[1][2] == "X"
