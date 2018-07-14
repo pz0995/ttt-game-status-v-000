@@ -104,8 +104,6 @@ def won(board)
           return "O won in the second diagonal - #{"second_diagonal_win"}"
           puts second_diagonal_win
 
-          combination in WIN_COMBINATIONS
-          puts combination
           end
     end
 end
