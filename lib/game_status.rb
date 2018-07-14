@@ -24,19 +24,14 @@ def won(board)
   WIN_COMBINATIONS.each_with_index do |combination, index|
     puts "#{index}"
 
-WIN_COMBINATIONS.map {|row| row[2]}
 
 
-end
+
   position_0 = board[win_index_0]
   position_1 = board[win_index_1]
   position_2 = board[win_index_2]
-  position_3 = board[win_index_3]
-  position_4 = board[win_index_4]
-  position_5 = board[win_index_5]
-  position_6 = board[win_index_6]
-  position_7 = board[win_index_7]
-  position_8 = board[win_index_8]
+
+
 
   top_row_win = [0, 1, 2]
   middle_row_win = [3, 4, 5]
@@ -49,9 +44,7 @@ end
 
 
 
-    if board[index].nil?
-          return false
-      end
+
 
     if board != !top_row_win || board != !middle_row_win || board != !bottom_row_win || board != !first_column_win || board != !second_column_win || board != !third_column_win || board != !first_diagonal_win || board != !second_diagonal_win
           return top_row_win.find_index
@@ -108,10 +101,14 @@ end
           puts second_diagonal_win
 
           end
+
+          if board[index].nil?
+                return false
+            end
     end
 
 
-
+end
 def full(board)
   if board.full.all
     return true
