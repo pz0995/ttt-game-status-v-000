@@ -62,7 +62,7 @@ def won(board)
 if  board.empty?
   return false
     end
-    
+
 def full?(board)
   if board.full.all
     return true
