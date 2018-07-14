@@ -59,11 +59,13 @@ def won(board)
           return WIN_COMBINATIONS[8]
           end
 
-if  board.empty?
+if board.empty?
   return false
     end
-    if board == !(won?) && board == (full?)
-
+if board == !won? && board == full?
+    return false
+  end
+return
 def full?(board)
   if !board.empty
     return true
@@ -71,7 +73,7 @@ def full?(board)
 end
 
 def draw?(board)
-  !(won?) && (full?)
+  !board.won? && board.full?
 end
 
 def over?(board) #need draw
