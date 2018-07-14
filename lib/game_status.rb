@@ -63,6 +63,8 @@ if  board.empty?
   return false
     end
 
+    if board == !(won?) && board == (full?)
+
 def full?(board)
   if board.full.all
     return true
