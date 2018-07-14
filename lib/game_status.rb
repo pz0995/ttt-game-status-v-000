@@ -22,7 +22,7 @@ WIN_COMBINATIONS = [
 
 def won(board)
   WIN_COMBINATIONS.each_with_index do |combination, index|
-    puts "#{combination}"
+    puts "#{index}"
   end
 
   win_index_0 = win_combination[0]
@@ -54,13 +54,6 @@ def won(board)
   first_diagonal_win = [0, 4, 8]
   second_diagonal_win = [2, 4, 6]
 
-
-  WIN_COMBINATIONS.each do |row|
-    row.each do |cell|
-      puts cell
-    end
-  end
-  puts WIN_COMBINATIONS[2..0]
 
 
     if board[index].nil?
