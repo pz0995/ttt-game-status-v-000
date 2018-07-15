@@ -49,4 +49,3 @@ if board.include? || board.won?
 else
   return false
 end
-  end
