@@ -24,10 +24,9 @@ def won?(board)
 end
 
 def full?(board)
-    WIN_COMBINATIONS.each do |comb|
   if board.all?
     return true
-  else   comb.include? == " " || comb.empty? || comb == ""
+  else   board.include? == " " || board.empty? || board == ""
   return false
 
   end
