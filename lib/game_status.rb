@@ -41,7 +41,8 @@ def draw?(board)
   WIN_COMBINATIONS.each do |combo|
   board.won? == false && full?(board) == true
   return true
-else return false
+else
+  return false
 end
 
 def over?(board) #need draw
