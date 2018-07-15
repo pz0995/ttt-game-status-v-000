@@ -48,8 +48,6 @@ if board.draw? || board.won? || board.full?
 else
   return false
 end
-
-
   end
 end
 end
