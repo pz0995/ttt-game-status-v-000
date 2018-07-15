@@ -26,7 +26,7 @@ end
 def full?(board)
   if board.all?
     return true
-  else   board.empty?
+  else   board.include? == " " || board.empty? || board == ""
   return false
 
   end
@@ -49,5 +49,5 @@ if board.include? || board.won?
 end
 end
 end
-
+end
 end
