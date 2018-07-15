@@ -24,7 +24,7 @@ def won?(board)
 end
 
 def full?(board)
-  if   board.detect? == " " || board.empty?
+  if   board.detect? == " " || board.empty? || board == ""
   return false
 else
   true
@@ -37,7 +37,7 @@ def winner?(board)
     return true
 
 def draw?(board)
-  won?(board) == false && full?(board) == true
+  board.won? == false && full?(board) == true
   return true
 end
 
