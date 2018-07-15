@@ -24,8 +24,8 @@ def won?(board)
 end
 
 def full?(board)
-  if   board.detect? == " " || board[index].nil?
-  return false
+  if   board.detect? == " " || board.empty
+  return true
 else
   false
   end
