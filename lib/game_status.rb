@@ -34,7 +34,7 @@ end
 def winner?(board)
 #should accept a board and return the token, "X" or "O" that has won the game given a winning board.
 #find winning WIN_COMBINATIONS, use winning index to find X or O
-  winning_combination = won?(board)
+  #winning_combination = won?(board)
   board[winning_combination[0]]
 end
 
