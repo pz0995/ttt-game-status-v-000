@@ -39,7 +39,7 @@ def winner?(board)
 end
 
 def draw?(board)
- full?(board) == true && won?(board) == false
+ won?(board) == false && full?(board) == true
 end
 
 def over?(board) #need draw
