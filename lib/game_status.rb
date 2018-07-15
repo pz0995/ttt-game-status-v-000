@@ -24,11 +24,10 @@ def won?(board)
 end
 
 def full?(board)
-  if board.all?
-    return true
-  else
-    board.include? == " " || board[index].nil?
+  if   board.detect? == " " || board[index].nil?
   return false
+else
+  false
   end
 end
 
