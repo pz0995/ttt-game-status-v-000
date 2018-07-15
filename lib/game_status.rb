@@ -27,8 +27,7 @@ def full?(board)
   if board.all?
     return true
   else   board.include? == " " || board.empty? || board == ""
-  return false
-
+    return false
   end
 end
 
@@ -36,17 +35,15 @@ def winner?(board)
 #should accept a board and return the token, "X" or "O" that has won the game given a winning board.
   if WIN_COMBINATIONS == won?(board)
     return true
-
+  end
+end
 def draw?(board)
   board.won? == false && full?(board) == true
   return true
 end
 
 def over?(board) #need draw
-if board.include? || board.won?
-  return true
-
-end
-end
-end
+  if board.include? || board.won?
+    return true
+  end
 end
