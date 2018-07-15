@@ -27,7 +27,7 @@ def full?(board)
   if board.all?
     return true
   else
-    board.include? == "" || board.include? == " " || board[index].nil?
+    board.include? == " " || board[index].nil?
   return false
   end
 end
