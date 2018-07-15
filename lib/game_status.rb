@@ -25,9 +25,9 @@ end
 
 def full?(board)
   if   board.detect? == " " || board.empty?
-  return true
+  return false
 else
-  false
+  true
   end
 end
 
