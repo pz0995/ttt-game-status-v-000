@@ -31,8 +31,13 @@ def full?(board)
   end
 end
 
+def winner?(board)
+#should accept a board and return the token, "X" or "O" that has won the game given a winning board.
+  if WIN_COMBINATIONS.any?
+    return true
+
 def draw?(board)
-  !board.won? || board.all?
+  !board.winner? || board.all?
   return true
 end
 
@@ -43,10 +48,7 @@ else
   return false
 end
 
-def winner?(board)
-#should accept a board and return the token, "X" or "O" that has won the game given a winning board.
-  if WIN_COMBINATIONS.any?
-    return true
+
   end
 end
 end
