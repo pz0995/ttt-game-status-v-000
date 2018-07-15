@@ -44,7 +44,7 @@ else return false
 end
 
 def over?(board) #need draw
-if board.draw? || board.won?
+if combo.include? || board.won?
   return true
 else
   return false
