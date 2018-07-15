@@ -38,11 +38,11 @@ end
 #   board[winning_combination[0]]
 # end
 #
-# def draw?(board)
-# #  won?(board) == false && full?(board) == true
-# #  return true
-# end
-#
+def draw?(board)
+#  won?(board) == false && full?(board) == true
+#  return true
+end
+
 # def over?(board) #need draw
 #   if full?(board) || won?(board)
 #     return true
