@@ -34,7 +34,7 @@ end
 
 def winner?(board)
 #should accept a board and return the token, "X" or "O" that has won the game given a winning board.
-  if WIN_COMBINATIONS = won?(board)?
+  if WIN_COMBINATIONS = won?(board)
     return true
 
 def draw?(board)
