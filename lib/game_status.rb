@@ -46,6 +46,5 @@ end
 def over?(board) #need draw
 if board.include? || board.won?
   return true
-else
-  return false
+
 end
