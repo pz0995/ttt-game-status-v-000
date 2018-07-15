@@ -24,10 +24,9 @@ def won?(board)
 end
 
 def full?(board)
-  if board.all?
+  if board = "" || " "
     return true
-  else !board.all?
-    return false
+
   end
 end
 
