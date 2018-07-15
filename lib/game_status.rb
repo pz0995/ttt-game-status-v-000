@@ -24,9 +24,10 @@ def won?(board)
 end
 
 def full?(board)
+    WIN_COMBINATIONS.each do |comb|
   if board.all?
     return true
-  else   combo.include? == " " || combo.empty? || combo == ""
+  else   comb.include? == " " || comb.empty? || comb == ""
   return false
 
   end
@@ -38,7 +39,6 @@ def winner?(board)
     return true
 
 def draw?(board)
-  WIN_COMBINATIONS.each do |combo|
   board.won? == false && full?(board) == true
   return true
 else
@@ -46,7 +46,7 @@ else
 end
 
 def over?(board) #need draw
-if combo.include? || board.won?
+if board.include? || board.won?
   return true
 else
   return false
