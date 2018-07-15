@@ -26,7 +26,7 @@ end
 def full?(board)
   if board.all?
     return true
-  else !board.won?
+  else !board.all?
     return false
   end
 end
@@ -39,6 +39,8 @@ end
 def over?(board) #need draw
 if board.draw? || board.won? || board.full?
   return true
+else
+  return false
 end
 
 def winner?(board)
