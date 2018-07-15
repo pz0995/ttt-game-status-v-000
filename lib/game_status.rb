@@ -25,10 +25,10 @@ end
 
 def full?(board)
   if board.all?
-return true
-else
+    return true
+  else
     board.include? == "" || board.include? == " "
-    return false
+  return false
   end
 end
 
