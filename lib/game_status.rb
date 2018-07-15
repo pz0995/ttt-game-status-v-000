@@ -26,7 +26,7 @@ end
 def full?(board)
   if board.all?
     return true
-  else   combo == " " || board.empty? || combo == ""
+  else   combo.include? == " " || combo.empty? || combo == ""
   return false
 
   end
@@ -38,6 +38,7 @@ def winner?(board)
     return true
 
 def draw?(board)
+  WIN_COMBINATIONS.each do |combo|
   board.won? == false && full?(board) == true
   return true
 else return false
