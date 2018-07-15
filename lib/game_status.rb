@@ -38,7 +38,7 @@ def winner?(board)
     return true
 
 def draw?(board)
-  !board.won? || board.full?
+  !won?(board) || ull?(board)
   return true
 end
 
