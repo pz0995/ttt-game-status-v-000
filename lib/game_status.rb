@@ -24,7 +24,7 @@ def won?(board)
 end
 
 def full?(board)
-  if   board.detect? == " " || board.empty? || board == ""
+  if   combo == " " || board.empty? || combo == ""
   return false
 else
   true
