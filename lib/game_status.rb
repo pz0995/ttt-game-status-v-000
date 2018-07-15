@@ -43,7 +43,7 @@ def draw?(board)
 end
 
 def over?(board) #need draw
-if board.draw? || board.won? || board.over?
+if board.draw? || board.won?
   return true
 else
   return false
