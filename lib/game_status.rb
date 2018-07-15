@@ -41,7 +41,7 @@ else
   return "O"
   board[winning_combination[0]]
 end
-
+end
 def draw?(board)
  !won?(board) && full?(board)
 end
